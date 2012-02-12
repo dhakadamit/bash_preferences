@@ -1,0 +1,22 @@
+#unix aliases
+
+alias bashrc='vi ~/.bashrc && source ~/.bashrc'
+alias l='ls -lh'
+alias la='ls -lha'
+alias c='clear'
+alias cx='chmod +x'
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias profile='emacs ~/.bash_profile'
+alias .='. ~/.bash_profile'
+alias psef='ps -ef | grep'
+alias psaux='ps aux | grep'
+alias apache='sudo $APACHE_HOME/bin/apachectl'
+alias emacs=' /Applications/Aquamacs.app/Contents/MacOS/Aquamacs'
+#export APACHE_HOME='/usr/local/apache2'
+alias dhakads='cd ~/projects/personal/dhakads.com'
+alias new.dhakads='cd ~/projects/personal/new.dhakads.com'
+alias herokudhakadamit='cp ~/.heroku/credentials.dhakadamit ~/.heroku/credentials'
+alias herokumetaltradelink='cp ~/.heroku/credentials.metaltradelink ~/.heroku/credentials'
+alias herokulivemetalrates='cp ~/.heroku/credentials.livemetalrates ~/.heroku/credentials'
+alias metaltradelink='cd /Users/amitd/projects/personal/metal_tradelink'
+alias 'personal=cd ~/projects/personal'
