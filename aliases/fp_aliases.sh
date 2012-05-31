@@ -1,0 +1,6 @@
+alias sshqa='ssh football@192.168.15.5'
+alias sshie1='ssh football@192.168.15.1'
+alias sshie2='ssh football@192.168.15.2'
+alias sshie3='ssh football@192.168.15.3'
+alias sshqa2='ssh football@192.168.15.4'
+alias cm='cd ~/projects/tw/FP/competition_management'

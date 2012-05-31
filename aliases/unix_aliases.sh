@@ -20,3 +20,5 @@ alias herokumetaltradelink='cp ~/.heroku/credentials.metaltradelink ~/.heroku/cr
 alias herokulivemetalrates='cp ~/.heroku/credentials.livemetalrates ~/.heroku/credentials'
 alias metaltradelink='cd /Users/amitd/projects/personal/metal_tradelink'
 alias 'personal=cd ~/projects/personal'
+alias vup='vagrant up'
+alias vssh='vagrant ssh'
