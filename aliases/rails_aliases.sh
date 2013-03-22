@@ -61,3 +61,4 @@ alias rspecenvironment='cp config/environments/rspec.rb config/environments/test
 alias cukeenvironment='git reset config/environments/test.rb; git checkout config/environments/test.rb'
 alias rake='bundle exec rake'
 alias vr='vagrant reload'
+alias bi='bundle install --path vendor/bundle'
