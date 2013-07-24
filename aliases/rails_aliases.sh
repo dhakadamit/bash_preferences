@@ -48,7 +48,7 @@ alias rdbda='rake db:drop:all'
 
 # tests
 alias rspec='bundle exec rspec'
-alias cukes='bundle exec cucumber --tags ~@manual --tags ~@omniture'
+alias cukes='bundle exec cucumber --tags ~@manual'
 
 # rails logs, tailing and cleaning
 alias tdl='tail -f ./log/development.log'
@@ -57,8 +57,6 @@ alias ctl='> ./log/test.log'
 alias cdl='> ./log/development.log'
 alias sspork='bundle exec spork'
 alias be='bundle exec'
-alias rspecenvironment='cp config/environments/rspec.rb config/environments/test.rb'
-alias cukeenvironment='git reset config/environments/test.rb; git checkout config/environments/test.rb'
 alias rake='bundle exec rake'
 alias vr='vagrant reload'
 alias bi='bundle install --path vendor/bundle'

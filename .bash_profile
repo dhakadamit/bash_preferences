@@ -1,6 +1,6 @@
 #path configurations
 export GIT_ALIASES=~/bash_preferences/aliases/git_aliases.sh
-#export FP_ALIASES=~/bash_preferences/aliases/fp_aliases.sh
+export MTL_ALIASES=~/bash_preferences/aliases/mtl_aliases.sh
 export RAILS_ALIASES=~/bash_preferences/aliases/rails_aliases.sh
 export UNIX_ALIASES=~/bash_preferences/aliases/unix_aliases.sh
 
@@ -39,7 +39,7 @@ PS1="$RED\w $YELLOW\$(parse_git_branch)$BLUE\$(rails_env)$GREEN\$ "
 source ~/bash_preferences/autocomplete/rake_cap_bash_autocomplete.sh
 source ~/bash_preferences/autocomplete/git_completion.bash
 source $GIT_ALIASES
-#source $FP_ALIASES
+source $MTL_ALIASES
 source $RAILS_ALIASES
 source $UNIX_ALIASES
 
