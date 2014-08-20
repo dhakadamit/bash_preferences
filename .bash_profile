@@ -8,7 +8,9 @@ export UNIX_ALIASES=~/bash_preferences/aliases/unix_aliases.sh
 shopt -s histappend
 unset HISTFILESIZE
 export HISTSIZE=200000
-export HISTCONTROL=erasedups
+export HISTFILESIZE=200000
+export HISTCONTROL=ignoredups:erasedups
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 bind '"\e[A"':history-search-backward
 bind '"\e[B"':history-search-forward
