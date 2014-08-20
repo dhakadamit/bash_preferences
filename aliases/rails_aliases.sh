@@ -39,7 +39,7 @@ sspe () {
 # database migrate
 alias rdbm='rake db:migrate'
 alias rdbmt='rake db:migrate RAILS_ENV=test'
-alias rdbms='rake db:migrate; rake db:seed'
+alias rdbms='rake db:migrate; rake db:seed RAILS_ENV=development'
 alias rdbmst='rake db:migrate RAILS_ENV=test; rake db:seed RAILS_ENV=test'
 alias rdbc='rake db:create'
 alias rdbd='rake db:drop'

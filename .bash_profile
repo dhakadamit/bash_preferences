@@ -7,7 +7,7 @@ export UNIX_ALIASES=~/bash_preferences/aliases/unix_aliases.sh
 # bash history across terminals
 shopt -s histappend
 unset HISTFILESIZE
-export HISTSIZE=20000
+export HISTSIZE=200000
 export HISTCONTROL=erasedups
 
 bind '"\e[A"':history-search-backward
