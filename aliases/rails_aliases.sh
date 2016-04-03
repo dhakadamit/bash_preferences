@@ -1,20 +1,20 @@
 #rails aliases
 # rails 3 shortcut 'r'
-alias r='bin/rails'
-alias greproutes='bin/rake routes | grep'
+alias r='rails'
+alias greproutes='rake routes | grep'
 
 # launching console/server
 sc () {
-  if [ -f ./bin/rails ]; then
-    bin/rails c $@
+  if [ -f ./script/rails ]; then
+    rails c $@
   else
-    ./bin/console $@
+    ./script/console $@
   fi
 }
 
 sg () {
-  if [ -f ./bin/rails ]; then
-    bin/rails g $@
+  if [ -f ./script/rails ]; then
+    rails g $@
   else
     ./script/generate $@
   fi
@@ -22,7 +22,7 @@ sg () {
 
 ss () {
   if [ -f ./script/rails ]; then
-    bin/rails s $@
+    rails s $@
   else
     ./script/server $@
   fi
@@ -37,17 +37,18 @@ sspe () {
 }
 
 # database migrate
-alias rdbm='bin/rake db:migrate'
-alias rdbmt='bin/rake db:migrate RAILS_ENV=test'
-alias rdbms='bin/rake db:migrate; bin/rake db:seed RAILS_ENV=development'
-alias rdbmst='bin/rake db:migrate RAILS_ENV=test; bin/rake db:seed RAILS_ENV=test'
-alias rdbc='bin/rake db:create'
-alias rdbd='bin/rake db:drop'
-alias rdbca='bin/rake db:create:all'
-alias rdbda='bin/rake db:drop:all'
+alias rdbm='rake db:migrate'
+alias rdbmt='rake db:migrate RAILS_ENV=test'
+alias rdbms='rake db:migrate; rake db:seed RAILS_ENV=development'
+alias rdbmst='rake db:migrate RAILS_ENV=test; rake db:seed RAILS_ENV=test'
+alias rdbc='rake db:create'
+alias rdbd='rake db:drop'
+alias rdbca='rake db:create:all'
+alias rdbda='rake db:drop:all'
 
 # tests
-alias rspec='bin/rspec'
+alias rspec='bundle exec rspec'
+alias cukes='bundle exec cucumber --tags ~@manual'
 
 # rails logs, tailing and cleaning
 alias tdl='tail -f ./log/development.log'
@@ -56,8 +57,6 @@ alias ctl='> ./log/test.log'
 alias cdl='> ./log/development.log'
 alias sspork='bundle exec spork'
 alias be='bundle exec'
-alias rake='bin/rake'
+alias rake='bundle exec rake'
 alias vr='vagrant reload'
 alias bi='bundle install --path vendor/bundle'
-alias ss='be spring stop'
-alias sshmplinode='~/sshmplinode.sh'
