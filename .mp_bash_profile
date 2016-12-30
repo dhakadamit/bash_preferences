@@ -40,7 +40,6 @@ PS1="$RED\w $YELLOW\$(parse_git_branch)$BLUE\$(rails_env)$GREEN\$ "
 source ~/bash_preferences/autocomplete/rake_cap_bash_autocomplete.sh
 source ~/bash_preferences/autocomplete/git_completion.bash
 source $GIT_ALIASES
-source $MTL_ALIASES
 source $RAILS_ALIASES
 source $UNIX_ALIASES
 
