@@ -1,24 +1,13 @@
 #rails aliases
 # rails 3 shortcut 'r'
 alias r='zeus'
-alias greproutes='bin/rake routes | grep'
+alias greproutes='zeus rake routes | grep'
 
 # launching console/server
-sc () {
-  zeus console
-}
-
-sg () {
-  zeus generate
-}
-
-ss () {
-  zeus server
-}
-
-st () {
-  zeus rspec
-}
+alias sc='r console'
+alias sg='r generate'
+alias ss='r server'
+alias st='r rspec'
 
 # database migrate
 alias rdbm='zeus rake db:migrate'
