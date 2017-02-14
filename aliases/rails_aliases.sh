@@ -4,37 +4,10 @@ alias r='rails'
 alias greproutes='rake routes | grep'
 
 # launching console/server
-sc () {
-  if [ -f ./script/rails ]; then
-    rails c $@
-  else
-    ./script/console $@
-  fi
-}
-
-sg () {
-  if [ -f ./script/rails ]; then
-    rails g $@
-  else
-    ./script/generate $@
-  fi
-}
-
-ss () {
-  if [ -f ./script/rails ]; then
-    rails s $@
-  else
-    ./script/server $@
-  fi
-}
-
-sspe () {
-  if [ -f ./script/rails ]; then
-    sudo rails s -p80 $@
-  else
-    sudo ./script/server -p80 $@
-  fi
-}
+alias sc='r console'
+alias sg='r generate'
+alias ss='r server'
+alias st='r rspec'
 
 # database migrate
 alias rdbm='rake db:migrate'
