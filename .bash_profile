@@ -1,7 +1,7 @@
 #path configurations
 export GIT_ALIASES=~/bash_preferences/aliases/git_aliases.sh
 export MTL_ALIASES=~/bash_preferences/aliases/mtl_aliases.sh
-export RAILS_ALIASES=~/bash_preferences/aliases/rails_aliases.sh
+export RAILS_ALIASES=~/bash_preferences/aliases/mp_rails_aliases.sh
 export UNIX_ALIASES=~/bash_preferences/aliases/unix_aliases.sh
 
 # bash history across terminals
